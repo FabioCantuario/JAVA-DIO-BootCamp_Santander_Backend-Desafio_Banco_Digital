@@ -28,9 +28,7 @@ public class ContaCorrente extends Conta {
 		super.impressaoInfosComuns();
 		System.out.println(String.format("Limite: %.2f", limiteEmprestimo));
 		System.out.println(String.format("Tarifa: %.2f", tarifaServico));
-		
+
 	}
-	
-	
 
 }

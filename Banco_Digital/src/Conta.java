@@ -6,7 +6,7 @@ public abstract class Conta implements IConta {
 	protected int agencia;
 	protected int numero;
 	protected double saldo;
-	protected Cliente cliente;
+	protected Cliente cliente, cpf;
 
 	public Conta(Cliente cliente) {
 		this.agencia = Conta.AGENCIA_PADRAO;
@@ -45,6 +45,7 @@ public abstract class Conta implements IConta {
 	
 	protected void impressaoInfosComuns() {
 		System.out.println(String.format("Titular: %s", this.cliente.getNome()));
+		System.out.println(String.format("CPF: %d", this.cliente.getCpf()));
 		System.out.println(String.format("Agencia: %d", this.agencia));
 		System.out.println(String.format("Numero: %d", this.numero));
 		System.out.println(String.format("Saldo: %.2f", this.saldo));
