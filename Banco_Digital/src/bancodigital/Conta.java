@@ -1,3 +1,4 @@
+package bancodigital;
 public abstract class Conta implements IConta {
 
 	protected static final int AGENCIA_PADRAO = 1;
